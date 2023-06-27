@@ -6,37 +6,23 @@ class RequestManipulator(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            self.wfile.write(b'Home')
-        elif self.path == '/debentures':
+            with open('views/home.html', 'r') as file:
+                content = file.read()
+            self.wfile.write(content.encode('utf-8'))
+        elif self.path == '/projecao':
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            self.wfile.write(b'Debentures')
-        elif self.path == '/cdb-cdi':
+            with open('views/projecao.html', 'r') as file:
+                content = file.read()
+            self.wfile.write(content.encode('utf-8'))
+        elif self.path == '/login':
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            self.wfile.write(b'CDB/CDI')
-        elif self.path == '/lci-lca':
-            self.send_response(200)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            self.wfile.write(b'LCI/LCA')
-        elif self.path == '/tesouro-direto':
-            self.send_response(200)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            self.wfile.write(b'Tesouro Direto')
-        elif self.path == '/letra-de-cambio':
-            self.send_response(200)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            self.wfile.write(b'Letra de Cambio')
-        elif self.path == '/cri-cra':
-            self.send_response(200)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            self.wfile.write(b'CRI/CRA')
+            with open('views/login.html', 'r') as file:
+                content = file.read()
+            self.wfile.write(content.encode('utf-8'))
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/html')
