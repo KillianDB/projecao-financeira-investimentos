@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1{
+    color: #b97714;
+}
+
+.link{
+    text-decoration: none;
+    color: blanchedalmond;
+}

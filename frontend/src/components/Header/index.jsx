@@ -5,9 +5,9 @@ function Header({title}){
     return(
         <header>
             <h1>{title}</h1>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/projecao'>Calcular projeção</NavLink>
-            <NavLink to='/login'>Login</NavLink>
+            <NavLink className='link' to='/'>Home</NavLink>
+            <NavLink className='link' to='/projecao'>Calcular projeção</NavLink>
+            <NavLink className='link' to='/login'>Login</NavLink>
         </header>
     );
 };
