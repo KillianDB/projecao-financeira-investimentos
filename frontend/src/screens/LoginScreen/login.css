@@ -1,0 +1,4 @@
+.loginDivAll{
+    display: flex;
+    flex-direction: row;
+}

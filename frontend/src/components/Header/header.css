@@ -3,6 +3,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 21vh;
 }
 
 header h1{

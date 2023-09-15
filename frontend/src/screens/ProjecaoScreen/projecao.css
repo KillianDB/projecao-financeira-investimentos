@@ -1,0 +1,17 @@
+.projecaoBody{
+    width: 100vw;
+    height: 100vh;
+}
+
+.projecaoDiv{
+    color:antiquewhite;
+    height: 79vh;
+}
+
+.projecaoH2{
+    color: antiquewhite;
+}
+
+.projecaoInput{
+    width: 66px;
+}
